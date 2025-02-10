@@ -37,27 +37,27 @@ body {
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     height: 100vh; /* Faz o fundo ocupar 100% da tela */
     display: flex;
-    flex-direction: column;html, body {
-        height: 100%; /* Faz a altura da tela ser 100% */
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        background-image: url("sua-imagem.jpg"); /* Substitua pelo nome da sua imagem */
-        background-size: cover; /* Faz a imagem cobrir toda a tela */
-        background-position: center; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Evita repetição da imagem */
-        width: 100vw; /* Garante que ocupe toda a largura */
-        height: 100vh; /* Garante que ocupe toda a altura */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url("https://images.pexels.com/photos/6629583/pexels-photo-6629583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center fixed; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
