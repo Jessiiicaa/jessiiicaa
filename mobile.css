@@ -54,7 +54,7 @@ html, body {
 }
 
 body {
-    background: url("https://images.pexels.com/photos/6629583/pexels-photo-6629583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center fixed; 
+    background: url("/images/images.jpg") no-repeat center center fixed; 
     background-size: cover;
     display: flex;
     flex-direction: column;
