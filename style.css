@@ -152,24 +152,3 @@ button:hover {
         top: 650px; 
         left: 710px; 
     }
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        font-family: Arial, sans-serif;
-        font-size: 18px;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .container {
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        padding: 20px;
-    }
-    
