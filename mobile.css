@@ -31,7 +31,7 @@ a {
     text-decoration: none;
 }
 body {
-    background-image: url("sua-imagem.jpg"); /* Substitua pelo nome da sua imagem */
+    background-image: url("https://images.pexels.com/photos/6629583/pexels-photo-6629583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Substitua pelo nome da sua imagem */
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
