@@ -1,0 +1,18 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versão Mobile</title>
+    <link rel="stylesheet" href="mobile.css"> <!-- Linkando o CSS Mobile -->
+</head>
+<body>
+    <h1>Bem-vindo à versão mobile!</h1>
+    <p>Esta é a versão otimizada para celular.</p>
+    <a href="index.html">Ir para a versão desktop</a> <!-- Link para voltar à versão PC -->
+</body>
+</html>
+<script>
+    if (window.innerWidth <= 768) {
+        window.location.href = "mobile.html";
+    }
+</script>
