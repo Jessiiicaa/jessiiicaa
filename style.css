@@ -87,6 +87,18 @@ h1 {
     right: 1470px; 
 }
 
+#botao5 {
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #ebe3e3;
+    color: rgb(248, 0, 0);
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    top: 495px;  
+    right: 745px; 
+}
 button:hover {
     background-color: #ffffff;
 }
@@ -152,3 +164,44 @@ button:hover {
         top: 650px; 
         left: 710px; 
     }
+
+    .heart-button {
+    background-color: #ff4d6d;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.heart-button::before,
+.heart-button::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #ff4d6d;
+    border-radius: 50%;
+}
+
+.heart-button::before {
+    top: -30px;
+    left: 0;
+}
+
+.heart-button::after {
+    left: 30px;
+    top: 0;
+}
+
+.heart-button:hover {
+    background-color: #e63950;
+}
