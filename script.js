@@ -12,25 +12,25 @@ window.onload = function() {
 document.getElementById("botao5").addEventListener("click", function() {
     window.open("amovc.html", "_blank");
 });
-
-
+// script.js
 
 let currentInput = '';  // Variável para armazenar o que o usuário digitou
 
-// Função para adicionar as palavras ao display
+// Função para adicionar as palavras (como "EU", "VOCE", etc.) ao display
 function appendToDisplay(value) {
     currentInput += value;  // Adiciona o valor ao que foi digitado
-    document.getElementById("display").value = currentInput;  // Atualiza o display com o valor acumulado
+    document.getElementById("display").value = currentInput;
 }
 
 // Função para limpar o display
 function clearDisplay() {
     currentInput = '';  // Limpa a entrada
-    document.getElementById("display").value = '';  // Limpa o display
+    document.getElementById("display").value = '';
 }
 
-// Função para calcular o "resultado" com base nas palavras
 function calculateResult() {
+
+    // Função para calcular o   "resultado" com base nas palavras
     let result = '';
     
     // Definir o que acontece quando certas combinações de palavras são feitas
@@ -44,34 +44,24 @@ function calculateResult() {
         result = 'RESULTADO DESCONHECIDO';
     }
 
-    document.getElementById("display").value = result;  // Mostra o resultado no display
+    document.getElementById("display").value = result;
 }
 
-// Adicionando listeners aos botões de forma programática
-document.getElementById("btnEU").addEventListener("click", function() {
-    appendToDisplay('EU');
-});
+// Permitir o uso de teclas de atalho para facilitar a entrada
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'E') {
+        appendToDisplay('EU');
+    } else if (e.key === 'V') {
+        appendToDisplay('VOCE');
+    } else if (e.key === 'O') {
+        appendToDisplay('OUTRA(O)');  // Permite que "OUTRA(O)" seja adicionado
+    } else if (e.key === 'F') {
 
-document.getElementById("btnVOCE").addEventListener("click", function() {
-    appendToDisplay('VOCE');
-});
-
-document.getElementById("btnOUTRA").addEventListener("click", function() {
-    appendToDisplay('OUTRA(O)');
-});
-
-document.getElementById("btnFAMILIA").addEventListener("click", function() {
-    appendToDisplay('FAMÍLIA');
-});
-
-document.getElementById("btnSOMA").addEventListener("click", function() {
-    appendToDisplay('+');
-});
-
-document.getElementById("btnClear").addEventListener("click", function() {
-    clearDisplay();
-});
-
-document.getElementById("btnResult").addEventListener("click", function() {
-    calculateResult();
+    } else if (e.key === '+') {
+        appendToDisplay('+');  // Permite adicionar o sinal de soma "+"
+    } else if (e.key === 'Enter') {
+        calculateResult();
+    } else if (e.key === 'Backspace') {
+        clearDisplay();
+    }
 });
