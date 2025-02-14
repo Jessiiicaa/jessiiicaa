@@ -35,9 +35,9 @@ function calculateResult() {
     // Definir o que acontece quando certas combinações de palavras são feitas
     if (currentInput === 'EUVOCE') {
         result = 'PERFEITOS P SEMPRE';
-    } else if (currentInput === 'VOCEOUTRO(A)') {
+    } else if (currentInput === 'VOCEOUTRA(O)') {
         result = 'TRISTEZA';
-    } else if (currentInput === 'EUOUTRO(A)') {
+    } else if (currentInput === 'EUOUTRA(O)') {
         result = 'TRISTEZA';
     } else {
         result = 'RESULTADO DESCONHECIDO';
