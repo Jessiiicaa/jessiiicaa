@@ -51,9 +51,9 @@ document.addEventListener('keydown', function (e) {
     if (e.key === 'E') {
         appendToDisplay('EU');
     } else if (e.key === 'V') {
-        appendToDisplay('VC');
-    } else if (e.key === 'A') {
-        appendToDisplay('AMIGOS');
+        appendToDisplay('VOCE');
+    } else if (e.key === 'O') {
+        appendToDisplay('OUTRA(O)');
     } else if (e.key === 'F') {
         appendToDisplay('FAMÍLIA');
     } else if (e.key === 'Enter') {
