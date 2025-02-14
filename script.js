@@ -33,11 +33,11 @@ function calculateResult() {
     let result = '';
     
     // Definir o que acontece quando certas combinações de palavras são feitas
-    if (currentInput === 'EU+VOCE') {
+    if (currentInput === 'EU + VOCE') {
         result = 'PERFEITOS P SEMPRE';
-    } else if (currentInput === 'VOCE+OUTRA(O)') {
+    } else if (currentInput === 'VOCE + OUTRA(O)') {
         result = 'TRISTEZA';
-    } else if (currentInput === 'EU+OUTRA(O)') {
+    } else if (currentInput === 'EU + OUTRA(O)') {
         result = 'TRISTEZA';
     } else {
         result = 'RESULTADO DESCONHECIDO';
