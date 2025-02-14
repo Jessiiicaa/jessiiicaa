@@ -21,18 +21,19 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display" disabled> <!-- Exibe a operação ou resultado -->
+        <input type="text" id="display" disabled> <!-- Aqui vai aparecer a operação/resultado -->
         <div class="buttons">
-            <!-- Botões para inserção de valores -->
-            <button class="btn" id="btnEU">EU</button>
-            <button class="btn" id="btnVOCE">VOCE</button>
-            <button class="btn" id="btnOUTRA">OUTRA(O)</button>
-            <button class="btn" id="btnFAMILIA">FAMÍLIA</button>
-            <button class="btn" id="btnSOMA">+</button>
+            <!-- Botões com nomes e resultados personalizados -->
+            <button class="btn" onclick="appendToDisplay('EU')">EU</button>
+            <button class="btn" onclick="appendToDisplay('VOCE')">VOCE</button>
+            <button class="btn" onclick="appendToDisplay('OUTRA(O)')">OUTRA(O)</button>
+            
 
             <!-- Botões de controle -->
-            <button class="btn" id="btnClear">Limpar</button>
-            <button class="btn" id="btnResult">Resultado</button>
+            <button class="btn" onclick="clearDisplay()">Limpar</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+            <button class="btn" onclick="appendToDisplay('+')">+</button>
+            <button class="btn" onclick="appendToDisplay('-')">-</button>
         </div>
     </div>
     <script src="script.js"></script>
