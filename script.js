@@ -28,8 +28,9 @@ function clearDisplay() {
     document.getElementById("display").value = '';
 }
 
-// Função para calcular o "resultado" com base nas palavras
 function calculateResult() {
+
+    // Função para calcular o "resultado" com base nas palavras
     let result = '';
     
     // Definir o que acontece quando certas combinações de palavras são feitas
