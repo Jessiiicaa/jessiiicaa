@@ -9,3 +9,6 @@ window.onload = function() {
     });
 };
 
+document.getElementById("botao5").addEventListener("click", function() {
+    window.open("amovc.html", "_blank");
+});
