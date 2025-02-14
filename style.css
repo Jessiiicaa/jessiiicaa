@@ -159,7 +159,7 @@ button:hover {
 
 .calculator {
     width: 300px;
-    background-color: #fff;
+    background-color: NONE;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -193,7 +193,7 @@ button {
 }
 
 button:hover {
-    background-color: #e0e0e0;
+    background-color: #f2c1c1;
 }
 
 button:active {
