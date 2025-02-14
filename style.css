@@ -159,16 +159,16 @@ button:hover {
 
 .calculator {
     width: 300px;
-    background-color: NONE;
-    border-radius: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px;
 }
 
 #display {
-    width: 100%;
+    width: 80%;
     height: 50px;
-    font-size: 24px;
+    font-size: 22px;
     text-align: right;
     margin-bottom: 20px;
     padding: 10px;
