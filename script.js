@@ -16,7 +16,7 @@ document.getElementById("botao5").addEventListener("click", function() {
 
 let currentInput = '';  // Variável para armazenar o que o usuário digitou
 
-// Função para adicionar as palavras (como "EU", "VC", etc.) ao display
+// Função para adicionar as palavras (como "EU", "VOCE", etc.) ao display
 function appendToDisplay(value) {
     currentInput += value;  // Adiciona o valor ao que foi digitado
     document.getElementById("display").value = currentInput;
@@ -33,11 +33,11 @@ function calculateResult() {
     let result = '';
     
     // Definir o que acontece quando certas combinações de palavras são feitas
-    if (currentInput === 'EU + VOCE') {
+    if (currentInput === 'EU+VOCE') {
         result = 'PERFEITOS P SEMPRE';
-    } else if (currentInput === 'VOCE + OUTRA(O)') {
+    } else if (currentInput === 'VOCE+OUTRA(O)') {
         result = 'TRISTEZA';
-    } else if (currentInput === 'EU + OUTRA(O)') {
+    } else if (currentInput === 'EU+OUTRA(O)') {
         result = 'TRISTEZA';
     } else {
         result = 'RESULTADO DESCONHECIDO';
@@ -53,9 +53,11 @@ document.addEventListener('keydown', function (e) {
     } else if (e.key === 'V') {
         appendToDisplay('VOCE');
     } else if (e.key === 'O') {
-        appendToDisplay('OUTRA(O)');
+        appendToDisplay('OUTRA(O)');  // Permite que "OUTRA(O)" seja adicionado
     } else if (e.key === 'F') {
         appendToDisplay('FAMÍLIA');
+    } else if (e.key === '+') {
+        appendToDisplay('+');  // Permite adicionar o sinal de soma "+"
     } else if (e.key === 'Enter') {
         calculateResult();
     } else if (e.key === 'Backspace') {
