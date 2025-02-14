@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     font-size: 25px;
      
-
+        
     p {
         font-size: 15px; 
         color:#ffffff;
@@ -153,15 +153,3 @@ button:hover {
         top: 650px; 
         left: 710px; 
     }
-    
-    .nova-aba {
-        font-family: 'montecarlo', Times, serif, sans-serif;
-    text-align: center;
-    margin: 250px;
-    background-color: #ffffff;
-    background-image: url('https://images.pexels.com/photos/6629583/pexels-photo-6629583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    font-size: 25px;
-    
