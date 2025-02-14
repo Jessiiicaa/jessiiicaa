@@ -11,31 +11,76 @@
     <p></p>
     </body>
 </html>
-<!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Personalizada</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Palavras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .calculator {
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .display {
+            margin-bottom: 10px;
+            font-size: 24px;
+            min-height: 30px;
+        }
+        .button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display" disabled> <!-- Aqui vai aparecer a operação/resultado -->
-        <div class="buttons">
-            <!-- Botões com nomes e resultados personalizados -->
-            <button class="btn" onclick="appendToDisplay('EU')">EU</button>
-            <button class="btn" onclick="appendToDisplay('VOCE')">VOCE</button>
-            <button class="btn" onclick="appendToDisplay('OUTRA(O)')">OUTRA(O)</button>
-            
-
-            <!-- Botões de controle -->
-            <button class="btn" onclick="clearDisplay()">Limpar</button>
-            <button class="btn" onclick="calculateResult()">=</button>
-            <button class="btn" onclick="appendToDisplay('+')">+</button>
-            <button class="btn" onclick="appendToDisplay('-')">-</button>
-        </div>
+        <div class="display" id="display"></div>
+        <button class="button" onclick="addToExpression('EU')">EU</button>
+        <button class="button" onclick="addToExpression('VOCÊ')">VOCÊ</button>
+        <button class="button" onclick="addToExpression('OUTRA(O)')">OUTRA(O)</button>
+        <br>
+        <button class="button" onclick="addToExpression('+')">+</button>
+        <button class="button" onclick="addToExpression('-')">-</button>
+        <button class="button" onclick="calculate()">=</button>
+        <br>
+        <button class="button" onclick="clearDisplay()">Limpar</button>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        let expression = "";
+        const results = {
+            "EU + VOCÊ": "AMOR",
+            "EU - VOCÊ": "SAUDADE",
+            "VOCÊ + OUTRA(O)": "CIÚMES",
+            "EU + OUTRA(O)": "DÚVIDA"
+        };
+
+        function addToExpression(value) {
+            expression += expression ? " " + value : value;
+            document.getElementById("display").innerText = expression;
+        }
+
+        function calculate() {
+            let result = results[expression] || "INDEFINIDO";
+            document.getElementById("display").innerText = result;
+            expression = "";
+        }
+
+        function clearDisplay() {
+            expression = "";
+            document.getElementById("display").innerText = "";
+        }
+    </script>
 </body>
 </html>
