@@ -172,14 +172,14 @@ button:hover {
     text-align: right;
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffc4c4;
     border-radius: 5px;
 }
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* Para 2 botões por linha */
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);  /* Para 2 botões por linha */
+    gap: 5px;
 }
 
 button {
