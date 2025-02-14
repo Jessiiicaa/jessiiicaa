@@ -9,6 +9,3 @@ window.onload = function() {
     });
 };
 
-document.getElementById("botaoNovaAba").addEventListener("click", function() {
-    window.open("nova-aba.html", "_blank"); // Abre a nova aba
-});
