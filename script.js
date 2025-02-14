@@ -30,11 +30,11 @@ function clearDisplay() {
 
 function calculateResult() {
 
-    // Função para calcular o "resultado" com base nas palavras
+    // Função para calcular o   "resultado" com base nas palavras
     let result = '';
     
     // Definir o que acontece quando certas combinações de palavras são feitas
-    if (currentInput === 'EUVOCE') {
+    if (currentInput === 'EU+VOCE') {
         result = 'PERFEITOS P SEMPRE';
     } else if (currentInput === 'VOCE+OUTRA(O)') {
         result = 'TRISTEZA';
