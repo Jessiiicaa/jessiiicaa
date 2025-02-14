@@ -11,24 +11,29 @@
     <p></p>
     </body>
 </html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculadora Personalizada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display" disabled>
+        <input type="text" id="display" disabled> <!-- Aqui vai aparecer a operação/resultado -->
         <div class="buttons">
-            <button class="btn" onclick="appendToDisplay('7')">EU</button>
-            <button class="btn" onclick="appendToDisplay('8')">VOCE</button>
-            <button class="btn" onclick="appendToDisplay('9')">OUTRA(O)</button>
-            <button class="btn" onclick="appendToDisplay('0')">0</button>
-            <button class="btn" onclick="clearDisplay()">C</button>
+            <!-- Botões com nomes e resultados personalizados -->
+            <button class="btn" onclick="appendToDisplay('EU')">EU</button>
+            <button class="btn" onclick="appendToDisplay('VC')">VC</button>
+            <button class="btn" onclick="appendToDisplay('AMIGOS')">OUTRA(O)</button>
+            
+
+            <!-- Botões de controle -->
+            <button class="btn" onclick="clearDisplay()">Limpar</button>
             <button class="btn" onclick="calculateResult()">=</button>
-            <button class="btn" onclick="appendToDisplay('+')">+</button>
+            <button class="btn" onclick="appendToDisplay('+')">Soma</button>
+            <button class="btn" onclick="appendToDisplay('-')">Subtração</button>
         </div>
     </div>
     <script src="script.js"></script>

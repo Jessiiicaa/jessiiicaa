@@ -12,19 +12,53 @@ window.onload = function() {
 document.getElementById("botao5").addEventListener("click", function() {
     window.open("amovc.html", "_blank");
 });
+// script.js
+
+let currentInput = '';  // Variável para armazenar o que o usuário digitou
+
+// Função para adicionar as palavras (como "EU", "VC", etc.) ao display
 function appendToDisplay(value) {
-    document.getElementById("display").value += value;
+    currentInput += value;  // Adiciona o valor ao que foi digitado
+    document.getElementById("display").value = currentInput;
 }
 
+// Função para limpar o display
 function clearDisplay() {
+    currentInput = '';  // Limpa a entrada
     document.getElementById("display").value = '';
 }
 
+// Função para calcular o "resultado" com base nas palavras
 function calculateResult() {
-    const display = document.getElementById("display");
-    try {
-        display.value = eval(display.value); // Avalia a expressão matemática
-    } catch (error) {
-        display.value = 'Erro';
+    let result = '';
+    
+    // Definir o que acontece quando certas combinações de palavras são feitas
+    if (currentInput === 'EUVOCE') {
+        result = 'PERFEITOS P SEMPRE';
+    } else if (currentInput === 'VOCEOUTRO(A)') {
+        result = 'TRISTEZA';
+    } else if (currentInput === 'EUOUTRO(A)') {
+        result = 'TRISTEZA';
+    } else {
+        result = 'RESULTADO DESCONHECIDO';
     }
+
+    document.getElementById("display").value = result;
 }
+
+// Permitir o uso de teclas de atalho para facilitar a entrada
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'E') {
+        appendToDisplay('EU');
+    } else if (e.key === 'V') {
+        appendToDisplay('VC');
+    } else if (e.key === 'A') {
+        appendToDisplay('AMIGOS');
+    } else if (e.key === 'F') {
+        appendToDisplay('FAMÍLIA');
+    } else if (e.key === 'Enter') {
+        calculateResult();
+    } else if (e.key === 'Backspace') {
+        clearDisplay();
+    }
+});
