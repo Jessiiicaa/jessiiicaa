@@ -1,5 +1,5 @@
 body {
-    .tab1{
+    
     font-family: 'montecarlo', Times, serif, sans-serif;
     text-align: center;
     margin: 250px;
@@ -154,4 +154,3 @@ button:hover {
         top: 650px; 
         left: 710px; 
     }
-}
