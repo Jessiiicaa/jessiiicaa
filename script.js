@@ -56,7 +56,7 @@ document.addEventListener('keydown', function (e) {
     } else if (e.key === 'O') {
         appendToDisplay('OUTRA(O)');  // Permite que "OUTRA(O)" seja adicionado
     } else if (e.key === 'F') {
-        appendToDisplay('FAMÍLIA');
+
     } else if (e.key === '+') {
         appendToDisplay('+');  // Permite adicionar o sinal de soma "+"
     } else if (e.key === 'Enter') {
