@@ -37,6 +37,7 @@
             font-size: 24px;
             min-height: 40px;
             padding: 10px;
+            color: #white;
             background-color: #e0e0e0;
             border-radius: 5px;
             box-shadow: inset 2px 2px 5px rgba(251, 251, 251, 0.667);
@@ -48,6 +49,14 @@
             box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2);
             font-family: comic sans ms, sans-serif;
             grid-template-columns: repeat(3, 1fr);
+            position: fixed;  /* Fixa no lugar */
+            top: 0;  /* Cola no topo */ 
+            left: 50%;  /* Centraliza horizontalmente */
+            transform: translateX(-50%);  /* Ajuste fino para centralizar corretamente */
+            width: 100%;  /* Faz ocupar a largura toda */
+            background-color: #fff;  /* Fundo branco (ou outra cor que quiser) */
+            padding: 10px;  /* Espaço interno */
+            text-align: center;  /* Centraliza o texto */box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombrinha para destacar */ z-index: 1000; /* Garante que fique acima de outros elementos */
         }
         .button {
             padding: 10px;
