@@ -22,7 +22,7 @@
             font-family: comic sans ms, sans-serif;
             text-align: center;
             margin: 50px;
-            position: relative;
+            padding: 0;
             
         }
         .calculator {
@@ -31,8 +31,23 @@
             border: 2px solid #ffffffba;
             border-radius: 10px;
             background-color: #ff000047;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            width: 90%;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .display {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 400px;
             margin-bottom: 20px;
             font-size: 24px;
             min-height: 40px;
@@ -48,7 +63,9 @@
             background-color: #ffffff6a;
             box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2);
             font-family: comic sans ms, sans-serif;
-            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            font-weight: bold;
+            z-index: 1000;
             
         }
         .button {
@@ -65,14 +82,17 @@
             background-color: #fff6f66e;
             color: white;
             transition: background-color 0.3s ease;
-            grid-template-columns: repeat(3, 1fr);
+            
             
             .button-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
-            max-width: 300px;
-            margin: 0 auto;}
+            width: 100%;
+            margin-top: 20px;}
+
+            .button:hover {
+                background-color: #ff4a3d;
         }
     </style>
 </head>
