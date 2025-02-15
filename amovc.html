@@ -31,9 +31,7 @@
             border: 2px solid #ffffffba;
             border-radius: 10px;
             background-color: #ff000047;
-            display: fixed;
-            top: 50%;
-            left: 50%;
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -110,11 +108,9 @@
         <button class="button" onclick="addToExpression('EU')">EU</button>
         <button class="button" onclick="addToExpression('VOCÊ')">VOCÊ</button>
         <button class="button" onclick="addToExpression('OUTRA(O)')">OUTRA(O)</button>
-        <br>
         <button class="button" onclick="addToExpression('+')">+</button>
         <button class="button" onclick="addToExpression('-')">-</button>
         <button class="button" onclick="calculate()">=</button>
-        <br>
         <button class="button" onclick="clearDisplay()">Limpar</button>
     </div>
 
