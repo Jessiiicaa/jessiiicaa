@@ -137,7 +137,15 @@
         function clearDisplay() {
             expression = "";
             document.getElementById("display").innerText = "";
+            
         }
+        function calculate() {
+        const results = ["Amor", "Felicidade", "Paixão", "Saudade", "Aventura", "Cumplicidade", "Destinos Unidos"]; 
+        const randomResult = results[Math.floor(Math.random() * results.length)];
+        }
+
+    document.getElementById("display").innerText = randomResult;
+        
     </script>
 </body>
 </html>
