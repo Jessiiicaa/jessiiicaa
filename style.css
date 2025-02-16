@@ -103,7 +103,7 @@ button:hover {
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     cursor: pointer;
     transition: transform 0.2s;
     position: absolute;
