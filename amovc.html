@@ -119,9 +119,11 @@
         const results = {
             "EU + VOCÊ": "AMOR",
             "EU - VOCÊ": "SAUDADE",
-            "VOCÊ + OUTRA(O)": "CIÚMES",
-            "EU + OUTRA(O)": "DÚVIDA"
+            "VOCÊ + OUTRA": "CIÚMES",
+            "EU + OUTRA": "DÚVIDA"
         };
+
+        const randomResults = ["AMOR", "SURPRESA", "ALEGRIA", "CONEXÃO", "DESTINO"];
 
         function addToExpression(value) {
             expression += expression ? " " + value : value;
@@ -139,11 +141,7 @@
             document.getElementById("display").innerText = "";
             
         }
-        function calculate() {
-        const results = ["Amor", "Felicidade", "Paixão", "Saudade", "Aventura", "Cumplicidade", "Destinos Unidos"]; 
-        const randomResult = results[Math.floor(Math.random() * results.length)];
-        }
-
+      
     document.getElementById("display").innerText = randomResult;
         
     </script>
