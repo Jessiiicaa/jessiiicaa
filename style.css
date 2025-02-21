@@ -1,150 +1,159 @@
-/* Estiliza a página */
 body {    
-    font-family: 'Montecarlo', Times, serif, sans-serif;
+    font-family: 'montecarlo', Times, serif, sans-serif;
     text-align: center;
-    margin: 0;
+    margin: 250px;
     background-color: #ffffff;
     background-image: url('https://images.pexels.com/photos/6629583/pexels-photo-6629583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
     font-size: 25px;
+     
+        
+    p {
+        font-size: 15px; 
+        color:#ffffff;
+        position: absolute;
+        top: 410px; 
+        left: 710px;      
+        font-family: 'comic sans ms', Times, serif, sans-serif;
+
+    }
+    p2 {
+        font-size: 15px; 
+        color:#ffffff;
+        position: absolute;
+        top: 680px; 
+        left: 1210px;      
+        font-family: 'comic sans ms';
+
+    }
+     
 }
 
-/* Estilo dos textos */
-p, .nova-aba {
-    font-size: 18px; 
-    color: #ffffff;
-    font-family: 'Comic Sans MS', Times, serif, sans-serif;
-    position: absolute;
-}
-
-/* Ajusta posição dos textos */
-p {
-    top: 400px; 
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-p2 {
-    top: 600px; 
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-/* Título */
 h1 {
     color: #ffffff;
-    font-family: 'Montecarlo', Times, serif, sans-serif;
-    font-size: 80px;
+    font-family: 'montecarlo', Times, serif, sans-serif;
+    font-size: 100px;
+    
 }
 
-/* Estiliza os botões */
-button {
-    padding: 12px 20px;
-    font-size: 22px;
+#botao1 {
+    padding: 10px 20px;
+    font-size: 25px;
     cursor: pointer;
     background-color: #ffffff;
     color: rgb(254, 0, 0);
     border: none;
-    border-radius: 20px;
-    display: block;
-    width: 90%;
-    max-width: 300px;
-    margin: 10px auto;
+    border-radius: 25px;
+    position: absolute;
+    top: 10px;  
+    right: 1470px; 
 }
-
-/* Efeito hover nos botões */
-button:hover {
-    background-color: #ddd;
-}
-
-/* Botão coração */
-.heart-button {
-    background-color: transparent;
+#botao2 {
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
     border: none;
-    color: #ff0000;
-    font-size: 40px;
-    width: 60px;
-    height: 60px;
+    border-radius: 25px;
+    position: absolute;
+    top: 10px;  
+    right: 10px; 
+}
+#botao3 {
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    top: 665px;  
+    right: 10px; 
+}
+#botao4 {
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #ebe3e3;
+    color: rgb(248, 0, 0);
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    top: 665px;  
+    right: 1470px; 
+}
+
+
+button:hover {
+    background-color: #ffffff;
+}
+  
+    
+  .heart-button {
+    background-color: transparent;
+    border: 0px solid #fdf6f6;
+    color: #030000;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;    
     cursor: pointer;
     transition: transform 0.2s;
     position: absolute;
-    top: 500px;
-    left: 50%;
-    transform: translateX(-50%);
-}
+    top: 495px;  
+    right: 745;
+    
+  }
+  
+  .heart-button:hover {
 
-/* Efeito hover no coração */
-.heart-button:hover {
-    transform: scale(1.2);
-}
-
-/* Texto animado tipo marquee */
-.marquee {
-    white-space: nowrap; 
-    overflow: hidden; 
-    width: 100%;
-    position: absolute;
-    top: 20px;
-}
-
-.marquee p {
-    display: inline-block;
-    font-size: 14px;
-    animation: rolar 10s linear infinite;
-    color: #ffffff;
-    font-family: 'Comic Sans MS', Times, serif, sans-serif;
-}
-
-@keyframes rolar {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
-}
-
-/* Animação de zoom */
-@keyframes zoom {
-    0% { transform: scale(0); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
-}
-
-.zoom-text {
-    font-size: 20px;
-    animation: zoom 2s ease-in-out;
-    color: white;
-    position: absolute;
-    top: 550px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-/* 🔹 Versão para Celular 🔹 */
-@media (max-width: 600px) {
-    body {
-        font-size: 16px;
+    transform: scale(1.1);}
+    .marquee {
+        white-space: nowrap; /* Impede a quebra de linha */
+        overflow: hidden; /* Esconde o conteúdo que sai da tela */
+        width: 100%;
     }
-
-    h1 {
-        font-size: 50px; /* Reduz tamanho do título */
+    
+    .marquee p {
+        display: inline-block;
+        font-size: 10px;
+        animation: rolar 16s linear infinite;
+        color: #ffffff;
+        font-family: 'comic sans ms', Times, serif, sans-serif;
+        position: absolute;
+        top: 10px; 
+        left: 710px; 
+    }   
+    
+    @keyframes rolar {
+        from {
+            transform: translateX(1000%);
+        }
+        to {
+            transform: translateX(-1000%);
+        }
     }
-
-    p, p2 {
-        font-size: 14px;
-        top: auto;
-        bottom: 100px;
-        width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
+    @keyframes zoom {
+        0% { transform: scale(0); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
     }
-
+    
     .zoom-text {
-        font-size: 16px;
-        top: auto;
-        bottom: 70px;
+        font-size: 24px;
+        animation: zoom 2s ease-in-out;
+        color: white;
+        position:absolute;
+        top: 650px; 
+        left: 710px; 
+    }
+.nova-aba{
+
+    font-family: 'comic sans ms';
+}
