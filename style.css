@@ -30,7 +30,26 @@ body {
     }
      
 }
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Aumenta o tamanho do texto no celular */
+        text-align: center; /* Centraliza o conteúdo */
+    }
 
+    img {
+        width: 100%; /* Faz imagens ocuparem toda a largura da tela */
+        max-width: 300px; /* Define um tamanho máximo */
+    }
+
+    iframe {
+        width: 100%; /* Faz o player ocupar toda a largura da tela */
+    }
+    .container {
+        display: flex;
+        flex-direction: column; /* Empilha os elementos no celular */
+        align-items: center; /* Centraliza tudo */
+    }
+}
 h1 {
     color: #ffffff;
     font-family: 'montecarlo', Times, serif, sans-serif;
